@@ -1,1 +1,0 @@
-# jordynhamilton.com
