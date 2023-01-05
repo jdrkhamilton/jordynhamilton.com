@@ -1,36 +1,105 @@
 <html>
   <head>
-    <title>Welcome to Squeege's Page</title>
+    <title>EasyPC</title>
     <style>
       body {
         font-family: Arial, sans-serif;
-        text-align: center;
+        margin: 0;
+        padding: 0;
       }
-      h1 {
-        color: #444444;
+      .header {
+        background-color: #0066FF;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
       }
-      p {
+      .header h1 {
+        margin: 0;
+        font-size: 32px;
+      }
+      .header a {
+        color: #FFFFFF;
+        text-decoration: none;
         font-size: 18px;
-        line-height: 1.5;
       }
-      li {
-        font-size: 16px;
+      .header a:hover {
+        text-decoration: underline;
       }
-      .highlight {
-        color: #0066FF;
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #EEEEEE;
+        padding: 10px;
       }
-    </style>
-  </head>
-  <body>
-    <h1>Meet <span class="highlight">Squeege</span> the Bottlenose Dolphin</h1>
-    <img src="squeege.jpg" alt="A picture of Squeege the bottlenose dolphin" width="400">
-    <p>Squeege is a friendly and playful bottlenose dolphin who loves to swim and explore the ocean. He is known for his high-energy acrobatic displays and his ability to communicate with his human friends.</p>
-    <h2>Fun Facts about Squeege</h2>
-    <ul>
-      <li>Squeege was born in the warm waters of the Caribbean Sea.</li>
-      <li>He is an expert hunter and can locate prey using echolocation.</li>
-      <li>Squeege is a skilled vocal learner and can imitate many different sounds.</li>
-      <li>He loves to play with toys and interact with people in a supervised setting.</li>
-    </ul>
-  </body>
-</html>
+      .nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .nav li {
+        margin: 0 10px;
+      }
+      .nav a {
+        color: #444444;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .nav a:hover {
+        text-decoration: underline;
+      }
+      .hero {
+        background-image: url("hero.jpg");
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+      }
+      .hero h2 {
+        font-size: 48px;
+        margin: 0;
+      }
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      .product {
+        width: 300px;
+        margin: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+      }
+      .product:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      .product img {
+        width: 100%;
+      }
+      .product h3 {
+        padding: 20px;
+        margin: 0;
+      }
+      .product p {
+        padding: 0 20px 20px 20px;
+        margin: 0;
+      }
+      .product .price {
+        padding: 20px;
+        background-color: #444444;
+        color: #FFFFFF;
+        font-size: 24px;
+        margin: 0;
+      }
+      .footer {
+        background-color: #444444;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space
